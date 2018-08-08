@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="" />
+	<meta name="Keywords" content="" />
+	<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+	<link rel="stylesheet" type="text/css" href="css/comm.css">
+	<link rel="stylesheet" type="text/css" href="css/center.css">
+	<title>我的玫瑰花</title>
+</head>
+<body>
+<div class="wrap wrap-center">
+	<a href="javascript:ruleShow()" class="rule-btn"><i class="icon-rule sprite sprite_rule_icon"></i>活动规则</a>
+	<div class="center-top">
+		<p class="center-flower-num"><span class="num">108</span><span>朵</span></p>
+		<div class="top-btn-box">
+			<a href="javascript:void(0)" class="top-btn btn01 linear-gradient01">送花给朋友</a>
+			<a href="javascript:void(0)" class="top-btn btn02 linear-gradient02">向朋友索要</a>
+		</div>
+	</div>
+	<h1 class="center-title"><span>玫瑰花记录</span></h1>
+	<div class="center-item-box">
+		<div class="item">
+			<ul class="info">
+				<li>
+					<div class="item-portrait fl"><img src="images/head_portrait.png" alt=""></div>
+					<div class="item-text fl">
+						<p class="name">微信昵称</p>
+						<p class="time">2018-01-21 21:43:55</p>
+					</div>
+					<div class="item-type fr">赠送你1朵花</div>
+				</li>
+				<li class="item-deduction">
+					<div class="item-portrait fl"><img src="images/head_portrait.png" alt=""></div>
+					<div class="item-text fl">
+						<p class="name">微信昵称</p>
+						<p class="time">2018-01-21 21:43:55</p>
+					</div>
+					<div class="item-type fr">赠送ta1朵花</div>
+				</li>
+				<li>
+					<div class="item-text fl">
+						<p class="name">微信种花收获</p>
+						<p class="time">2018-01-21 21:43:55</p>
+					</div>
+					<div class="item-type fr">1朵花</div>
+				</li>
+				<li class="item-deduction">
+					<div class="item-text fl">
+						<p class="name">抽奖扣除玫瑰花</p>
+						<p class="time">2018-01-21 21:43:55</p>
+					</div>
+					<div class="item-type fr">-99朵花</div>
+				</li>
+				<li>
+					<div class="item-text fl">
+						<p class="name">APP种花收获</p>
+						<p class="time">2018-01-21 21:43:55</p>
+					</div>
+					<div class="item-type fr">1朵花</div>
+				</li>
+			</ul>	
+		</div>
+		<div class="scroll-item scroll-plan"  style="display: none;"><i></i></div>
+	</div>
+	<div class="center-btn-box">
+		<a href="rank.html" class="center-btn btn01 linear-gradient01 text-gradient01 font-jdcyj">查看排行</a>
+		<a href="activity.html" class="center-btn btn02 linear-gradient02 text-gradient02 font-jdcyj">返回种花</a>
+	</div>
+</div>
+
+<!-- 弹窗-不能向自己索要花朵哦！ -->
+<div class="pop-box">
+	<div class="pop-center pop-activity">
+		<a href="javascript:void(0)" class="pop-close close-btn sprite sprite_pop_close"></a>
+		<div class="pop-info info04">
+			<p class="prompt-text-max">不能向自己索要花朵哦！</p>
+		</div>
+		<a href="activity.html" class="pop-btn linear-gradient01">去种花</a>
+	</div>
+</div>
+
+<!-- 弹窗-已赠送 -->
+<div class="pop-box">
+	<div class="pop-center pop-activity">
+		<a href="javascript:void(0)" class="pop-close close-btn sprite sprite_pop_close"></a>
+		<h1 class="pop-title title02">已赠送</h1>
+		<div class="pop-info info02">
+			<p class="prompt-text">已向好友赠送1朵玫瑰<br>多次点击赠送按钮会多次赠送哦。</p>
+		</div>
+		<a href="javascript:void(0)" class="pop-btn linear-gradient01 close-btn">好的</a>
+	</div>
+</div>
+
+<!-- 弹窗-玫瑰余额不足 -->
+<div class="pop-box">
+	<div class="pop-center pop-activity">
+		<a href="javascript:void(0)" class="pop-close close-btn sprite sprite_pop_close"></a>
+		<h1 class="pop-title title02">玫瑰余额不足</h1>
+		<div class="pop-info info02">
+			<p class="prompt-text">抱歉，您的玫瑰花余额不足，请先种花吧！</p>
+		</div>
+		<a href="javascript:void(0)" class="pop-btn linear-gradient01 close-btn">好的</a>
+	</div>
+</div>
+
+<!-- 分享提示 -->
+<div class="pop-box">
+	<div class="pop-share">
+		<a href="javascript:void(0)" class="pop-close close-btn sprite sprite_pop_close"></a>
+	</div>
+</div>
+
+<!-- 弹窗-活动规则 -->
+<div class="pop-box dn" id="ruleBoxId">
+	<div class="pop-center pop-rule">
+		<a href="javascript:void(0)" class="pop-close close-btn sprite sprite_pop_close"></a>
+		<h1 class="pop-title">活动规则</h1>
+		<div class="rule-box">
+			<div class="item">
+				<div class="info">
+					<h2>【活动日期】2018年3月12日10:00-2018年3月21日24:00</h2>
+					<h2>【奖品安排】</h2>
+					<!--大奖-->
+					<table class="ruleTable" border="0" cellpadding="0">
+						<thead>
+						  <tr>
+							  <th colspan="2">集齐50朵玫瑰花抽奖</td>
+						  </tr>
+						  <tr>
+							  <td width="70%">奖品</td>
+							  <td width="30%">份数</td>
+						  </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>中国移动A4手机</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>2G流量</td>
+								<td>2000</td>
+							</tr>
+							<tr>
+								<td>1G流量</td>
+								<td>5000</td>
+							</tr>
+							<tr>
+								<td>150M流量</td>
+								<td>30000</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<!--小奖-->
+					<table class="ruleTable">
+						<thead>
+						<tr>
+							<th colspan="2">采摘玫瑰花抽奖</td>
+						</tr>
+						<tr>
+							<td width="70%">奖品</td>
+							<td width="30%">份数</td>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>70M流量</td>
+							<td>30000</td>
+						</tr>
+						<tr>
+							<td>30M流量</td>
+							<td>50000</td>
+						</tr>
+						<tr>
+							<td>30和微币</td>
+							<td>200000</td>
+						</tr>
+						<tr>
+							<td>20和微币</td>
+							<td>300000</td>
+						</tr>
+						<tr>
+							<td>10和微币</td>
+							<td>500000</td>
+						</tr>
+						<tr>
+							<td>5和微币</td>
+							<td>1500000</td>
+						</tr>
+						<tr>
+							<td>每日优鲜满59元减30元券（新用户专享）</td>
+							<td>10000000</td>
+						</tr>
+						</tbody>
+					</table>
+					<h2>【参与规则】</h2>
+					<p>1、活动期间，您需持续订阅并绑定“中国移动10086”微信公众号，或持续下载并登陆10086APP，否则奖品无法发放；</p>
+					<p>2、您可通过微信图文、回复关键字“种花”、优惠集锦或点击10086APP首页轮播图等方式参与活动；</p>
+					<p>3、每天可在活动页面种10朵玫瑰花，玫瑰花每1个小时可采摘1次，完成花朵成长任务后即可采摘，每次采摘花朵可抽奖一次（本抽奖不扣除花朵数量），若想加速花朵成长，请根据页面提示前往另一个渠道完成加速任务，加速后可减少0.5小时花朵成长时间；</p>
+					<p>4、活动期间，您可以向好友赠送和索要玫瑰花，当花朵数量达到50朵，即可抽取大奖（奖品包含：手机、流量等），此次抽奖将扣除您相应玫瑰花数量。</p>
+
+					<h2>【奖品发放规则】</h2>
+					<p>1、活动期间，您所中的每日优鲜优惠券奖品的使用规则以合作方的解释为准，<a href="http://mp.weixin.qq.com/s/5Kando5oOedq82YFhLMcvA">点击查看具体规则</a>；如有疑问请咨询每日优鲜客服，客服电话：<a href="tel:400-991-1977；">400-991-1977；</a>；</p>
+					<p>2、手机奖品将在活动结束后20个工作日内，由10086客服人员电话联系发奖事宜，请您保持电话畅通；若在发奖期间，客服人员拨打电话超过三次，您仍未能接听，或在与客服通话时，您拒绝提供邮寄信息或表示放弃，则默认为您放弃该奖品；</p>
+					<p>3、和微币奖品将在活动结束后7个工作日（不含假期）内充值到账，可在个人主页-和微币记录页面查询赠送情况；</p>
+					<p>4、活动期间，流量奖品将于4月23日前充值入您绑定的手机号码中，届时会有短信提醒，如若23日后未收到流量到账提醒短信，请不要着急，我们会在5月1日开始的10个工作日内为您补充入绑定的手机号码中；</p>
+					<p>5、赠送的流量为国内流量（河北、贵州为省内流量），2/3/4G通用，当月有效，流量不结转；</p>
+					<p>6、号码欠费、未进行实名制认证、处于非正常状态的用户，奖品可能无法成功到账；</p>
+					<p>7、携号转网、集团用户流量无法到账，请谨慎参与。</p>
+				</div>
+			</div>
+			<div class="scroll-item scroll-plan"  style="display: none;"><i></i></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/comm.js"></script>
+
+<script>
+	window.onload = pageInit;
+
+	// 初始化页面滚动条
+	scrollInit({
+		object: $('.center-item-box .item')
+	});
+
+	// $(".pop-box").addClass('dn');
+	
+	function ruleShow() {
+		showObj($("#ruleBoxId"));
+		scrollInit({
+			object: $('#ruleBoxId .item')
+		});
+	}
+	function showObj(obj) {
+		$(obj).removeClass("dn");
+	}
+	function hideObj(obj) {
+		$(obj).addClass("dn");
+	}
+</script>
+</body>
+</html>

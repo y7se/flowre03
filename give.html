@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="" />
+	<meta name="Keywords" content="" />
+	<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+	<link rel="stylesheet" type="text/css" href="css/comm.css">
+	<link rel="stylesheet" type="text/css" href="css/other.css">
+	<title>我的玫瑰花</title>
+</head>
+<body>
+<div class="wrap wrap-other">
+	<div class="give-box">
+		<div class="give-top">
+			<div class="give-user-box">
+				<div class="give-user-portrait"><img src="images/head_portrait.png" alt=""></div>
+				<p class="give-user-name">微信昵称</p>
+			</div>
+			<p class="give-text">赠送你1朵花</p>
+		</div>
+		<p class="other-prompt">每次抽奖需花费99朵玫瑰花</p>
+		<div class="other-btn-box">
+			<a href="javascript:void(0)" class="other-btn linear-gradient01 text-gradient01 font-jdcyj">收下这朵花</a>
+			<a href="activity.html" class="other-btn linear-gradient02 text-gradient02 font-jdcyj">去种花</a>
+		</div>
+	</div>
+</div>
+
+<!-- 弹窗-不能领取自己赠送的花朵哦！ -->
+<div class="pop-box dn">
+	<div class="pop-center pop-activity">
+		<!-- <a href="javascript:void(0)" class="pop-close close-btn"></a> -->
+		<div class="pop-info info04">
+			<p class="prompt-text-max">不能领取自己赠送的花朵哦！</p>
+		</div>
+		<a href="activity.html" class="pop-btn linear-gradient01">去种花</a>
+	</div>
+</div>
+
+<!-- 弹窗-已收下玫瑰花 -->
+<div class="pop-box dn">
+	<div class="pop-center pop-activity">
+		<a href="javascript:void(0)" class="pop-close close-btn sprite sprite_pop_close"></a>
+		<h1 class="pop-title title02">已收下玫瑰花</h1>
+		<div class="pop-info info02">
+			<p class="prompt-text">恭喜你，已成功收下该玫瑰花！</p>
+		</div>
+		<a href="javascript:void(0)" class="pop-btn linear-gradient01 close-btn">好的</a>
+	</div>
+</div>
+
+<!-- 弹窗-该玫瑰已被领取 -->
+<div class="pop-box dn">
+	<div class="pop-center pop-activity">
+		<a href="javascript:void(0)" class="pop-close close-btn sprite sprite_pop_close"></a>
+		<h1 class="pop-title title02">该玫瑰已被领取</h1>
+		<div class="pop-info info02">
+			<p class="prompt-text">该玫瑰已经被人领取啦，下次再来吧！</p>
+		</div>
+		<a href="javascript:void(0)" class="pop-btn linear-gradient01 close-btn">好的</a>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/comm.js"></script>
+
+<script>
+	window.onload = pageInit;
+</script>
+</body>
+</html>

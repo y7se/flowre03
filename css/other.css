@@ -1,0 +1,194 @@
+.wrap.wrap-other {
+	background: url('../images/bg_other.jpg');
+}
+.wrap.wrap-other .give-box {
+	padding-top: 130px;
+}
+.wrap.wrap-other .gain-box {
+	padding-top: 65px;
+}
+.wrap.wrap-other .give-top {
+	width: 710px;
+	height: 373px;
+	margin: 0 auto;
+	border-radius: 20px;
+	background: url('../images/center_top.jpg') no-repeat;
+	box-shadow: 0 6px 35px #ffd7c0;
+	-webkit-box-shadow: 0 6px 35px #ffd7c0;
+	position: relative;
+	margin-top: 90px;
+}
+.wrap.wrap-other .give-top p.give-text {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	line-height: 70px;
+	text-align: center;
+	font-size: 52px;
+	font-weight: bold;
+	color: #cc2838;
+}
+.wrap.wrap-other .give-top p.help-text {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	line-height: 36px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #d13d44;
+}
+.wrap.wrap-other .give-top .give-user-box {
+	position: absolute;
+	top: -90px;
+	left: 25px;
+	width: 660px;
+}
+.wrap.wrap-other .give-top .give-user-box .give-user-portrait {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #e5e5e5;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.wrap.wrap-other .give-top .give-user-box .give-user-name {
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+	color: #000;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.wrap.wrap-other .gain-top {
+	width: 710px;
+	height: 553px;
+	margin: 0 auto;
+	position: relative;
+	background: url('../images/gain_flower.png') no-repeat 280px bottom;
+}
+.wrap.wrap-other .gain-top:after {
+	content: '向你索要1朵玫瑰花';
+	position: absolute;
+	top: 160px;
+	left: 0;
+	width: 100%;
+	line-height: 90px;
+	text-align: center;
+	font-size: 52px;
+	font-weight: bold;
+	color: #cc2838;
+}
+.wrap.wrap-other .gain-top .gain-user-box {
+	width: 100%;
+}
+.wrap.wrap-other .gain-top .gain-user-box .gain-user-portrait {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #e5e5e5;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.wrap.wrap-other .gain-top .gain-user-box .gain-user-name {
+	line-height: 60px;
+	font-size: 24px;
+	color: #000;
+	text-align: center;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.wrap.wrap-other .other-prompt {
+	line-height: 137px;
+	font-size: 30px;
+	color: #cc2838;
+	font-weight: bold;
+	text-align: center;
+}
+.wrap.wrap-other .other-btn-box {
+	width: 708px;
+	height: 108px;
+	margin: 0 auto;
+	display: box;
+	display: -webkit-box;
+	box-pack: justify;
+	-webkit-box-pack: justify;
+	box-align: top;
+	-webkit-box-align: top;
+	display: flex;
+	display: -webkit-flex;
+	align-items: top;
+	-webkit-align-items: top;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.wrap.wrap-other .help-btn-box {
+	padding-top: 90px;
+}
+.wrap.wrap-other .other-btn {
+	display: block;
+	width: 320px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	border-radius: 50px;
+	font-size: 36px;
+	color: #fff;
+	position: relative;
+}
+.wrap.wrap-other .help-btn-box .other-btn {
+	margin: 0 auto;
+}
+.wrap.wrap-other .other-record-btn {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	width: 170px;
+	line-height: 50px;
+	box-sizing: border-box;
+	padding-left: 50px;
+	font-size: 26px;
+	color: #cc454b;
+	text-decoration: underline;
+	margin-left: -85px;
+	background: url('../images/icon_record.png') no-repeat left center;
+}
+
+.wrap.wrap-error {
+	background-color: #fff;
+	padding-top: 102px;
+}
+.wrap.wrap-error .error-box {
+	padding-top: 370px;
+	background: url('../images/error_bg.png') no-repeat center top;
+}
+.wrap.wrap-error .error-box .error-prompt {
+	line-height: 80px;
+	text-align: center;
+	font-size: 46px;
+	color: #fe667a;
+	font-weight: bold;
+}
+.wrap.wrap-error .error-box .error-prompt-min {
+	line-height: 60px;
+	color: #000;
+	font-size: 26px;
+	text-align: center;
+}
+.wrap.wrap-error .error-box .error-btn {
+	display: block;
+	width: 380px;
+	height: 94px;
+	margin: 40px auto 0;
+	border: 2px solid #fe667a;
+	border-radius: 47px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 46px;
+	color: #fe667a;
+	font-weight: bold;
+}

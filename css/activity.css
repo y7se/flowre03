@@ -1,0 +1,350 @@
+.wrap.wrap-activity {
+	background: url('../images/bg_activity.jpg') no-repeat center center;
+	background-size: cover;
+}
+.wrap.wrap-activity .start-btn {
+	position: absolute;
+	top: 70px;
+	left: 11px;
+	width: 280px;
+	height: 88px;
+	border-radius: 44px;
+	background: #c27a08;
+	background: linear-gradient(to top, #c27a08 0%, #f29400 30%, #ffd34b 100%);
+	background: -webkit-linear-gradient(to top, #c27a08 0%, #f29400 30%, #ffd34b 100%);
+	box-shadow: 0 10px 0 #815104;
+	-webkit-box-shadow: 0 10px 0 #815104;
+}
+.wrap.wrap-activity .start-btn .start-text {
+	display: block;
+	line-height: 88px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 3px 0 #f58003;
+	-webkit-text-shadow: 0 3px 0 #f58003;
+}
+.wrap.wrap-activity .start-btn.cannot {
+	background: #868686;
+	box-shadow: 0 10px 0 #575757;
+	-webkit-box-shadow: 0 10px 0 #575757;
+	display: box;
+	display: -webkit-box;
+	box-orient:vertical;
+	-webkit-box-orient:vertical;
+	box-pack: center;
+	-webkit-box-pack: center;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	align-content: center;
+	-webkit-align-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	z-index: 10;
+}
+.wrap.wrap-activity .start-btn.cannot .start-text {
+	width: 100%;
+	line-height: 54px;
+	text-shadow: 0 3px 0 #867047;
+	-webkit-text-shadow: 0 3px 0 #867047;
+}
+.wrap.wrap-activity .start-btn.cannot .start-time {
+	width: 100%;
+	height: 26px;
+	text-align: left;
+	box-sizing: border-box;
+	font-size: 24px;
+	color: #fff;
+	margin: 0 auto;
+	display: box;
+	display: -webkit-box;
+	box-pack: center;
+	-webkit-box-pack: center;
+	box-align: center;
+	-webkit-box-align: center;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+.wrap.wrap-activity .start-btn.cannot .start-time .icon-time {
+	display: block;
+	width: 22px;
+	height: 22px;
+	margin-right: 10px;
+}
+.wrap.wrap-activity .activity-prompt {
+	position: absolute;
+	top: 180px;
+	left: 11px;
+	width: 280px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 24px;
+	color: #cc454b;
+}
+.wrap.wrap-activity .flower-num {
+	position: absolute;
+	top: 90px;
+	right: 22px;
+	min-width: 160px;
+	height: 110px;
+	line-height: 110px;
+	box-sizing: border-box;
+	padding-left: 74px;
+	background: url('../images/flower.png') no-repeat;
+	font-size: 36px;
+	color: #cc454b;
+	z-index: 10;
+}
+.wrap.wrap-activity .flower-text {
+	position: absolute;
+	top: 200px;
+	right: 23px;
+	width: 170px;
+	height: 47px;
+	line-height: 43px;
+	box-sizing: border-box;
+	text-align: center;
+	border: 2px solid #cc454b;
+	border-radius: 24px;
+	font-size: 24px;
+	color: #cc454b;
+	z-index: 10
+}
+.wrap.wrap-activity .flower-prompt {
+	position: absolute;
+	top: 320px;
+	left: 0;
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	color: #cc2838;
+}
+.wrap.wrap-activity .flower-prompt:after {
+	content: '';
+	position: absolute;
+	top: -160px;
+	left: 50%;
+	width: 77px;
+	height: 140px;
+	margin-left: -65px;
+	background: url('../images/icon_arrows.png') no-repeat;
+}
+.wrap.wrap-activity .flower-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.wrap.wrap-activity .flower-info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 270px;
+	height: 242px;
+	margin-left: -135px;
+	margin-top: -105px;
+}
+.wrap.wrap-activity .flower-info:before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+}
+.wrap.wrap-activity .flower-info:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../images/flowerpot.png') no-repeat;
+	z-index: 10;
+}
+.wrap.wrap-activity .flower01 .flower-info:before {
+	bottom: 220px;
+	left: 120px;
+	width: 81px;
+	height: 76px;
+	background: url('../images/flower_state01.png') no-repeat;
+}
+.wrap.wrap-activity .flower02 .flower-info:before {
+	bottom: 190px;
+	left: 104px;
+	width: 67px;
+	height: 157px;
+	background: url('../images/flower_state02.png') no-repeat;
+}
+.wrap.wrap-activity .flower03 .flower-info:before {
+	bottom: 228px;
+	left: 104px;
+	width: 117px;
+	height: 124px;
+	background: url('../images/flower_state03.png') no-repeat;
+}
+.wrap.wrap-activity .flower04 .flower-info:before {
+	bottom: 228px;
+	left: 84px;
+	width: 133px;
+	height: 250px;
+	background: url('../images/flower_state04.png') no-repeat;
+}
+.wrap.wrap-activity .flower05 .flower-info:before {
+	bottom: 170px;
+	left: 60px;
+	width: 164px;
+	height: 318px;
+	background: url('../images/flower_state05.png') no-repeat;
+}
+.wrap.wrap-activity .expedite-btn {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	width: 170px;
+	height: 62px;
+	box-sizing: border-box;
+	margin-left: -85px;
+	background-color: #50b21d;
+	border-radius: 31px;
+	box-shadow: 0 10px 0 #2e7708;
+	-webkit-box-shadow: 0 10px 0 #2e7708;
+	line-height: 62px;
+	text-align: center;
+	font-size: 36px;
+	color: #fff;
+	padding-right: 40px;
+	text-shadow: 0 3px 0 #3a8215;
+	-webkit-text-shadow: 0 3px 0 #3a8215;
+	z-index: 100;
+}
+.wrap.wrap-activity .expedite-btn i {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 14px;
+	height:43px;
+	width:41px;
+	margin-top: -22px;
+}
+
+.wrap.wrap-activity .flower-task {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 680px;
+	margin-left: -340px;
+	margin-top: 163px;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	display: flex;
+	justify-content: space-between;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+}
+.wrap.wrap-activity .flower-task .task-btn {
+	display: block;
+	width: 129px;
+	height: 144px;
+	font-size: 0;
+	position: relative;
+}
+.wrap.wrap-activity .flower-task .task-btn.btn01 {
+	width: 131px;
+	background: url('../images/activity_task_btn01.png') no-repeat;
+}
+.wrap.wrap-activity .flower-task .task-btn.btn02 {
+	background: url('../images/activity_task_btn02.png') no-repeat;
+}
+.wrap.wrap-activity .flower-task .task-btn.btn03 {
+	background: url('../images/activity_task_btn03.png') no-repeat;
+}
+.wrap.wrap-activity .flower-task .task-btn.btn04 {
+	background: url('../images/activity_task_btn04.png') no-repeat;
+}
+.wrap.wrap-activity .flower-task .task-btn:after {
+	content: 'x'attr(data-num);
+	position: absolute;
+	top: -15px;
+	left: 113px;
+	line-height: 40px;
+	width: 100px;
+	font-size: 28px;
+	color: #cd3c41;
+}
+
+.wrap.wrap-activity .flower-task-prompt {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 26px;
+	color: #282828;
+	margin-top: 340px;
+}
+.wrap.wrap-activity .flower-task-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 176px;
+	height: 66px;
+	line-height: 66px;
+	text-align: center;
+	margin-top: 334px;
+	margin-left: -88px;
+	border-radius: 33px;
+	font-size: 46px;
+	color: #fff;
+}
+
+.wrap.wrap-activity .activity-btn-box {
+	position: absolute;
+	bottom: 90px;
+	left: 50%;
+	width: 708px;
+	margin-left: -354px;
+	display: box;
+	display: -webkit-box;
+	box-pack: justify;
+	-webkit-box-pack: justify;
+	box-align: top;
+	-webkit-box-align: top;
+	display: flex;
+	display: -webkit-flex;
+	align-items: top;
+	-webkit-align-items: top;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.wrap.wrap-activity .activity-btn-box .activity-btn {
+	display: block;
+	width: 320px;
+	height: 100px;
+	line-height: 100px;
+	border-radius: 50px;
+	position: relative;
+	text-align: center;
+	font-size: 36px;
+	color: #fff;
+}
+.wrap.wrap-activity .activity-record-btn {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	width: 140px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 26px;
+	color: #000;
+	text-decoration: underline;
+	margin-left: -70px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="" />
+	<meta name="Keywords" content="" />
+	<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+	<link rel="stylesheet" type="text/css" href="css/comm.css">
+	<link rel="stylesheet" type="text/css" href="css/other.css">
+	<title>我的玫瑰花</title>
+</head>
+<body>
+<div class="wrap wrap-other">
+	<div class="gain-box">
+		<div class="gain-top">
+			<div class="gain-user-box">
+				<div class="gain-user-portrait"><img src="images/head_portrait.png" alt=""></div>
+				<p class="gain-user-name">微信昵称</p>
+			</div>
+		</div>
+		<p class="other-prompt">每次抽奖需花费99朵玫瑰花</p>
+		<div class="other-btn-box">
+			<a href="javascript:void(0)" class="other-btn linear-gradient01 text-gradient01 font-jdcyj">送给TA</a>
+			<a href="activity.html" class="other-btn linear-gradient02 text-gradient02 font-jdcyj">去种花</a>
+		</div>
+	</div>
+</div>
+
+<!-- 弹窗-已赠送 -->
+<div class="pop-box">
+	<div class="pop-center pop-activity">
+		<a href="javascript:void(0)" class="pop-close close-btn sprite sprite_pop_close"></a>
+		<h1 class="pop-title title02">已赠送</h1>
+		<div class="pop-info info02">
+			<p class="prompt-text">已向好友赠送1朵玫瑰<br>多次点击赠送按钮会多次赠送哦。</p>
+		</div>
+		<a href="javascript:void(0)" class="pop-btn linear-gradient01 close-btn">好的</a>
+	</div>
+</div>
+
+<!-- 弹窗-玫瑰余额不足 -->
+<div class="pop-box">
+	<div class="pop-center pop-activity">
+		<a href="javascript:void(0)" class="pop-close close-btn sprite sprite_pop_close"></a>
+		<h1 class="pop-title title02">玫瑰余额不足</h1>
+		<div class="pop-info info02">
+			<p class="prompt-text">抱歉，您的玫瑰花余额不足，请先种花吧！</p>
+		</div>
+		<a href="javascript:void(0)" class="pop-btn linear-gradient01 close-btn">好的</a>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/comm.js"></script>
+
+<script>
+	window.onload = pageInit;
+</script>
+</body>
+</html>

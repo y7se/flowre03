@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="" />
+	<meta name="Keywords" content="" />
+	<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+	<link rel="stylesheet" type="text/css" href="css/comm.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>情人节的秘密花园</title>
+</head>
+<body>
+<div class="wrap wrap-index">
+	<div class="page-info index-theme">
+		<a href="activity.html" class="index-btn linear-gradient01 text-gradient01 font-jdcyj dn">开始种花<i class="sprite sprite_index_btn_deco"></i></a>
+		<div class="loaded-box linear-gradient01">
+			<p class="loaded-item"><span class="loaded-info"></span></p>
+			<span class="loaded-num"></span>
+		</div>
+	</div>
+</div>
+
+<!-- 弹窗-登录 -->
+<div class="pop-box dn" id="bingId">
+	<div class="pop-center pop-index">
+	<!--	<a href="javascript:void(0)" class="pop-close close-btn"></a>-->
+		<h1 class="pop-title title01">玫瑰要放哪个手机号呢？</h1>
+		<div class="pop-info info01">
+			<div class="login-item item-mobile">
+				<i class="sprite sprite_pop_mobile_icon"></i>
+				<input type="tel"  id="mobileId"  class="login-input" placeholder="玫瑰要放哪个手机号呢？">
+			</div>
+
+			<div class="login-item item-code" >
+				<i class="sprite sprite_pop_password_icon"></i>
+				<input type="text" id="smsCodeId" class="login-input" placeholder="短信验证码">
+				<a href="javascript:void(0)" id="getSmsCodeBtn" class="code-btn">发送验证码</a>
+			</div>
+			<div id="msgNotify" class="login-prompt">输入号码有误，请重新输入！</div>
+		</div>
+		<a href="javascript:void(0)" id="mobileOkBtn" class="pop-btn linear-gradient01">确定</a>
+	</div>
+</div>
+
+<!-- 弹窗-关注 -->
+<div class="pop-box dn" id="subBoxId">
+	<div class="pop-center pop-index">
+		<!--<a href="javascript:void(0)" class="pop-close close-btn"></a>-->
+		<h1 class="pop-title title01">订阅我们才能种花哦</h1>
+		<div class="pop-info info01">
+			<div class="qr-code"><img src="images/qr_code.png" alt=""></div>
+			<p class="qr-prompt">长按识别上方二维码<br>回复关键词“种花”即可参与</p>
+		</div>
+		<!--<a href="javascript:void(0)" class="pop-btn linear-gradient01 close-btn">确定</a>-->
+	</div>
+</div>
+
+<!-- 弹窗-请在10086 APP打开
+链接 -->
+<div class="pop-box dn" id="goToAppId">
+	<div class="pop-center pop-activity">
+		<!--<a href="javascript:void(0)" class="pop-close close-btn"></a>-->
+		<div class="pop-info info04">
+			<p class="prompt-text">请在10086 APP打开链接</p>
+		</div>
+		<a href="http://a.app.qq.com/o/simple.jsp?pkgname=zz.dela.cmcc.traffic" class="pop-btn linear-gradient01 w320">下载10086 APP</a>
+	</div>
+</div>
+
+<!-- 弹窗-亲，您来晚啦，活动已经结束！ -->
+<div class="pop-box dn" id="offline">
+	<div class="pop-center pop-activity">
+		<!--<a href="javascript:void(0)" class="pop-close"></a>-->
+		<div class="pop-info info04">
+			<p class="prompt-text-max">亲，您来晚啦，活动已经结束！</p>
+			<p class="prompt-text">后期精彩不断，请持续关注！</p>
+		</div>
+		<a href="activity.html" class="pop-btn linear-gradient01">好的</a>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/comm.js"></script>
+
+<script>
+	window.onload = load;
+</script>
+</body>
+</html>
